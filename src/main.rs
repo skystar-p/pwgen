@@ -8,7 +8,7 @@ fn main() {
             Arg::with_name("length")
                 .index(1)
                 .required(true)
-                .help("length of password"),
+                .help("length of password")
         )
         .get_matches_safe()
         .unwrap_or_else(|e| e.exit());
